@@ -1,0 +1,19 @@
+oci_artifacts_container_repository export_project
+    oci_artifacts_container_repository export_project_1
+    oci_artifacts_container_repository export_project_2
+
+oci_functions_function export_project_2
+    oci_functions_function export_project_2_1
+    oci_functions_function export_project_2_2
+
+oci_devops_deploy_environment export_fn
+    oci_devops_deploy_environment export_fn_1
+    oci_devops_deploy_environment export_fn_2
+
+oci_devops_repository export_project_1
+    oci_devops_repository export_project_1_1
+    oci_devops_repository export_project_1_2
+
+oci_devops_repository_ref export_project_1_repository_ref
+    oci_devops_repository_ref export_project_1_repository_ref_1
+    oci_devops_repository_ref export_project_1_repository_ref_2
