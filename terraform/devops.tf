@@ -443,7 +443,7 @@ resource oci_devops_build_pipeline_stage export_build {
       repository_url  = "https://devops.scmservice.${var.region}.oci.oraclecloud.com/namespaces/${data.oci_objectstorage_namespace.tenancy_namespace.namespace}/projects/${var.project_name}/repositories/${var.image_name_testimonials}"
     }
   }
-  build_spec_file = "build_spec_testimonials.yaml"
+  build_spec_file = "build_spec.yaml"
   #deliver_artifact_collection = <<Optional value not found in discovery>>
   #deploy_pipeline_id = <<Optional value not found in discovery>>
   description  = ""
@@ -511,7 +511,7 @@ resource oci_devops_build_pipeline_stage export_build_1 {
       repository_url  = "https://devops.scmservice.${var.region}.oci.oraclecloud.com/namespaces/${data.oci_objectstorage_namespace.tenancy_namespace.namespace}/projects/${var.project_name}/repositories/${var.image_name_authorizer}"
     }
   }
-  build_spec_file = "build_spec_authorizer.yaml"
+  build_spec_file = "build_spec.yaml"
   #deliver_artifact_collection = <<Optional value not found in discovery>>
   #deploy_pipeline_id = <<Optional value not found in discovery>>
   description  = ""
