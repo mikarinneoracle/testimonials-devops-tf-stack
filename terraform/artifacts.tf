@@ -8,7 +8,7 @@ resource oci_artifacts_container_configuration export_container_configuration {
 resource oci_artifacts_container_repository export_project_1 {
   compartment_id = oci_artifacts_container_configuration.export_container_configuration.compartment_id
   
-  display_name = "${var.image_name_testimonials}"
+  display_name = "${var.project_name}-${var.image_name_testimonials}"
   freeform_tags = {
   }
   is_immutable = "false"
@@ -21,7 +21,7 @@ resource oci_artifacts_container_repository export_project_1 {
 resource oci_artifacts_container_repository export_project_2 {
   compartment_id = oci_artifacts_container_configuration.export_container_configuration.compartment_id
   
-  display_name = "${var.image_name_authorizer}"
+  display_name = "${var.project_name}-${var.image_name_authorizer}"
   freeform_tags = {
   }
   is_immutable = "false"

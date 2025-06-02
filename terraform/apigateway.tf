@@ -3,7 +3,7 @@
 resource oci_apigateway_gateway export_testimonials {
   #certificate_id = <<Optional value not found in discovery>>
   compartment_id = var.compartment_ocid
-  display_name  = "Testimonials"
+  display_name  = "${var.project_name}"
   endpoint_type = "PUBLIC"
   freeform_tags = {
   }
@@ -25,7 +25,7 @@ resource oci_apigateway_gateway export_testimonials {
 
 resource oci_apigateway_deployment export_testimonials {
   compartment_id = var.compartment_ocid
-  display_name = "Testimonials"
+  display_name  = "${var.project_name}"
   freeform_tags = {
   }
   gateway_id  = oci_apigateway_gateway.export_testimonials.id

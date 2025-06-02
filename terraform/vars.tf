@@ -2,15 +2,15 @@ variable region { default = "eu-frankfurt-1" }
 variable registry { default = "fra.ocir.io" }
 variable compartment_ocid { }
 variable project_name { 
-    default = "Testimonials"
+    default = "testimonials"
     description = "Name of the Testimonials App OCI DevOps project and it's related resources"
 }
 variable image_name_testimonials { 
-    default = "testimonials-app"
+    default = "app"
     description = "Name of the Testimonials App image that is built by the pipelines and deployed in the target OCI Function"
 }
 variable image_name_authorizer { 
-    default = "testimonials-authorizer"
+    default = "authorizer"
     description = "Name of the Testimonials Authorizer image that is built by the pipelines and deployed in the target OCI Function"
 }
 variable docker_user { 
