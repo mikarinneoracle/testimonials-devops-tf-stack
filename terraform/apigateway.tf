@@ -176,5 +176,52 @@ resource oci_apigateway_deployment export_testimonials {
         #response_cache_store = <<Optional value not found in discovery>>
       }
     }
+    routes {
+      backend {
+        #allowed_post_logout_uris = <<Optional value not found in discovery>>
+        #body = <<Optional value not found in discovery>>
+        #connect_timeout_in_seconds = <<Optional value not found in discovery>>
+        function_id = "ocid1.fnfunc.oc1.eu-frankfurt-1.aaaaaaaa7sfyy47zcqo37yepngtjrwf7ylj23otak4hll4ojqk4aawles7ta"
+        #headers = <<Optional value not found in discovery>>
+        #is_ssl_verify_disabled = <<Optional value not found in discovery>>
+        #post_logout_state = <<Optional value not found in discovery>>
+        #read_timeout_in_seconds = <<Optional value not found in discovery>>
+        #routing_backends = <<Optional value not found in discovery>>
+        #selection_source = <<Optional value not found in discovery>>
+        #send_timeout_in_seconds = <<Optional value not found in discovery>>
+        #status = <<Optional value not found in discovery>>
+        type = "ORACLE_FUNCTIONS_BACKEND"
+        #url = <<Optional value not found in discovery>>
+      }
+      logging_policies {
+        #access_log = <<Optional value not found in discovery>>
+        execution_log {
+          #is_enabled = <<Optional value not found in discovery>>
+          log_level = ""
+        }
+      }
+      methods = [
+        "GET",
+        "POST",
+      ]
+      path = "/login"
+      request_policies {
+        authorization {
+          #allowed_scope = <<Optional value not found in discovery>>
+          type = "ANONYMOUS"
+        }
+        #body_validation = <<Optional value not found in discovery>>
+        #cors = <<Optional value not found in discovery>>
+        #header_transformations = <<Optional value not found in discovery>>
+        #header_validations = <<Optional value not found in discovery>>
+        #query_parameter_transformations = <<Optional value not found in discovery>>
+        #query_parameter_validations = <<Optional value not found in discovery>>
+        #response_cache_lookup = <<Optional value not found in discovery>>
+      }
+      response_policies {
+        #header_transformations = <<Optional value not found in discovery>>
+        #response_cache_store = <<Optional value not found in discovery>>
+      }
+    }
   }
 }
