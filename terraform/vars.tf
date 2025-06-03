@@ -6,11 +6,11 @@ variable project_name {
     description = "Name of the Testimonials App OCI DevOps project and it's related resources"
 }
 variable image_name_testimonials { 
-    default = "app"
+    default = "testimonials-app"
     description = "Name of the Testimonials App image that is built by the pipelines and deployed in the target OCI Function"
 }
 variable image_name_authorizer { 
-    default = "authorizer"
+    default = "testimonials-authorizer"
     description = "Name of the Testimonials Authorizer image that is built by the pipelines and deployed in the target OCI Function"
 }
 variable docker_user { 
