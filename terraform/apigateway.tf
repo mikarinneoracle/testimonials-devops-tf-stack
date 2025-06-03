@@ -181,7 +181,7 @@ resource oci_apigateway_deployment export_testimonials {
         #allowed_post_logout_uris = <<Optional value not found in discovery>>
         #body = <<Optional value not found in discovery>>
         #connect_timeout_in_seconds = <<Optional value not found in discovery>>
-        function_id = "ocid1.fnfunc.oc1.eu-frankfurt-1.aaaaaaaa7sfyy47zcqo37yepngtjrwf7ylj23otak4hll4ojqk4aawles7ta"
+        function_id = oci_functions_function.export_project_2_2.id
         #headers = <<Optional value not found in discovery>>
         #is_ssl_verify_disabled = <<Optional value not found in discovery>>
         #post_logout_state = <<Optional value not found in discovery>>
